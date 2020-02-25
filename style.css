@@ -1,0 +1,13 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    font-family: 'Rubik';
+}
+
+#ueberschrift{
+    display: flex;
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1/9;
+}
