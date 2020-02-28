@@ -3,11 +3,58 @@ body{
     grid-template-columns: repeat(8, 100px);
     grid-template-rows: repeat(8, 100px);
     font-family: 'Rubik';
+
 }
 
 #ueberschrift{
     display: flex;
     justify-content: center;
+    align-items: center;
     grid-row: 1;
     grid-column: 1/9;
+}
+
+#result{
+    grid-row: 2;
+    grid-column: 3/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#taschenrechner{
+    grid-row: 3/6;
+    grid-column: 3/7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+th{
+    border: none;
+    width: 60px;
+}
+
+td{
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+td:focus{
+    outline: none;
+}
+
+#equals{
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+}
+
+#plus, #minus, #multiply, #divide{
+    color: orange;
 }
