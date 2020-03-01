@@ -1,4 +1,4 @@
-var computationString = "";
+var computationString = "12+234";
 var result = 0;
 
 var resultDiv = document.getElementById("result");
@@ -9,13 +9,24 @@ computationStringDiv.innerHTML = computationString;
 
 
 function deleteAll(){
-    console.log("Delete all elements.");
+    result = 0; 
+    computationString = "";
+    resultDiv.innerHTML = result;
+    updateComputationStringDiv();
 }
 
 function deleteSingle(){
-    console.log("Delete single element.");
+    console.log(computationString);
+    computationString.slice(0, computationString.length-1 - 1) + computationString.slice(computationString.length-1, computationString.length);
+    updateComputationStringDiv();
+    console.log(computationString);
 }
 
 function divide(){
     console.log("Divide.");
+}
+
+
+function updateComputationStringDiv(){
+    computationStringDiv.innerHTML = computationString;
 }

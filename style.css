@@ -27,7 +27,8 @@ body{
 }
 
 #result{
-
+    font-size: 120%s;
+    font-weight: bold;
 }
 
 #taschenrechner{
